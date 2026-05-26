@@ -33,7 +33,7 @@
         <h1>Visit The Daily Grind Cafe</h1>
 
     <div class="bottom-images" style="display:flex; justify-content:center; margin-top:10px;">
-        <img src="images/photo-1600447196220-eaca91b66c5f.avif" >
+        <img src="images/photo-1600447196220-eaca91b66c5f.avif" width="100%">
     </div>
 <p class="subtitle">We would love to host you. Drop by for a COFFEE!!</p>
 
@@ -54,8 +54,24 @@
                     <h2> Location</h2>
                     <p>123 Coffee Lane, Tokai<br>Cape Town, 8001</p>
                 </div>
+   <div class="info-block">
+    <h2>Contact Us</h2>
+    <form action="submit.php" method="POST">
+        <label for="text">Your Name:</label><br>
+        <input type="text" name="name" placeholder="Your Name" required>
+<br>
+<label for="email">Your Email Address:</label><br>
+        <input type="email" name="email" placeholder="Your Email" required>
 
- </section>  
+<br>
+        <label for="message">Your Message:</label><br>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+ </section> 
+ 
+ <!--Map to my Cafe-->
   <style>
        
     .map-container {
@@ -83,7 +99,7 @@
 
     <div class="map-container">
         <iframe
-            src="https://www.google.com/maps?q=Tokai,Cape%20Town&output=embed"
+            src="https://www.google.com/maps?q=Tokai,Cape%20Town&output=embed" height="450" width="600"
             allowfullscreen=""
             loading="lazy">
         </iframe>
