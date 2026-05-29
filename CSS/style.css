@@ -1,7 +1,10 @@
-/* 3 HEADER AND NAVIGATION */
+/*  HEADER AND NAVIGATION */
 header{
     background-color: #EFECE3;
     border-bottom: 2px soild #2E4A3E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
 } 
 .logo b {
@@ -28,6 +31,9 @@ header{
 .nav-links a :active
 .nav-links a :focus{
     color: #C69363;
+}
+.hero-container a {
+    text-decoration: none;
 }
 
 /* Buttons and interactive elements*/
@@ -103,18 +109,28 @@ textarea{
     color: #3D2314;
     font-family: inherit;
 }
- /* 1. GLOBAL BACKGROUND (Soft Warm Cream) AND TEXT COLOR */
+/*footer */
+.main-footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(61, 35, 20, 0.1);
+}
+
+ /*  GLOBAL BACKGROUND (Soft Warm Cream) AND TEXT COLOR */
 body {
   background-color: #faf8f5;
   color: #3d2314;
   font-family: 'Aptos Regular', system-ui, sans-serif;
   font-size: 11pt;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0 0 4rem 0;
+  line-height: 1.5;
+
+  display: felx;
+  flex-direction: column;
+
 }
 
-/* 3. THE TITLES AND HEADINS */
+/*  THE TITLES AND HEADINS */
 h1, h2, h3,h4 ,h5, h6{
     font-family: 'Apto Display', system-ui, -apple-system, sans-serif;
     color: #3d2314;
