@@ -1,17 +1,63 @@
+/* 3 HEADER AND NAVIGATION */
+header{
+    background-color: #EFECE3;
+    border-bottom: 2px soild #2E4A3E;
+
+} 
+.logo b {
+    font-family: 'Aptos Display', system-ui, sans-serif;
+    color: #3D2314;
+    font-size: 1.3rem;
+
+}
+
+/* Navigation bars*/
+.nav-links{
+    color: #3D2314;
+}
+.nav-links a{
+    color: #3D2314;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 5px;
+    transition: color 0.2s ease;
+}
+
+
  /* 1. GLOBAL BACKGROUND (Soft Warm Cream) AND TEXT COLOR */
 body {
   background-color: #faf8f5;
-  color: #3d2314; /* Keeps regular text readable and matching */
+  color: #3d2314;
   font-family: 'Aptos Regular', system-ui, sans-serif;
   font-size: 11pt;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
   padding: 0 0 4rem 0;
 }
 
-/* 2. THE TITLES AND HEADINS */
+/* 3. THE TITLES AND HEADINS */
 h1, h2, h3,h4 ,h5, h6{
     font-family: 'Apto Display', system-ui, -apple-system, sans-serif;
     color: #3d2314;
-    font-weight: bold;
+    font-weight: 700;
 }
+h1{font-size: 2.2rem;
+text-align: center;
+margin: 2.5rem 1rem 1.5rem 1rem;
+}
+h2{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+h3{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+
