@@ -300,5 +300,89 @@ p {
     transform: scale(0.98);
 }
 
+/* --- Contact Page Clean Alignment Layout --- */
 
+/* Centers the main page column but lets elements align inside */
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Force the top heading and subtitle to stay centered */
+.contact-container h1,
+.subtitle,
+.map-section-title {
+    text-align: center;
+}
+
+/* Centers the coffee cup container */
+.bottom-images {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.bottom-images img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Aligns the 3 info blocks (Hours, Touch, Location) into a nice row */
+.info.panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Style for individual info boxes to stop them from centering their text */
+.info-block {
+    flex: 1;
+    min-width: 250px;
+    background: #fdfdfd;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: left; /* Aligns content inside neatly to the left */
+    box-sizing: border-box;
+}
+
+/* Form block specific alignment */
+.info-block form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns labels and inputs to the left */
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Make inputs look clean and fill the box nicely */
+.info-block input,
+.info-block textarea {
+    width: 100%;
+    max-width: 400px; /* Keeps fields from getting too wide */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Clean up the send button */
+.info-block button {
+    padding: 10px 25px;
+    background-color: #8B5A2B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
