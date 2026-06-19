@@ -281,7 +281,7 @@ p {
 
 /* --- INDEX HERO EXPLORE BUTTON INTERACTION --- */
 
-/* 1. Prepares the double-wide background (Caramel visible, Green hidden) */
+/* 1. Prepares the double-wide background (aramel visible, Green hidden */
 .hero-container button {
     background-image: linear-gradient(to right, #C69363 50%, #2E4A3E 50%);
     background-size: 200% 100%;
@@ -289,15 +289,16 @@ p {
     transition: background-position 0.4s ease, box-shadow 0.3s ease;
 }
 
-/* 2. The Hover State: Slides the green color in when the mouse is on it */
+/* 2. The Hover State Slides the green color in when the mouse is on it */
 .hero-container button:hover {
     background-position: right bottom !important;
     box-shadow: 0 4px 12px rgba(46, 74, 62, 0.3);
 }
 
-/* 3. The Click State: Keeps it clean and locked in place */
+/* 3. The Click State */
 .hero-container button:active {
     transform: scale(0.98);
 }
-    
+
+
 
