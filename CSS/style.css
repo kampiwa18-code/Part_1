@@ -397,7 +397,7 @@ p {
 
 /* Slide open and fade in when active class is present */
 .faq-item.active p {
-    max-height: 150px; /* Provides room for the paragraph text */
+    max-height: 150px; 
     opacity: 1;
     padding: 10px 10px;
 }
@@ -408,10 +408,34 @@ p {
     float: right;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
-    color: #c69363; /* Accent color matching your palette */
+    color: #c69363; 
 }
 
 /* Turn the indicator into a minus symbol when the block is active */
 .faq-item.active h3::after {
     content: ' −';
+}
+
+/* Center the container text and fix margins */
+.faq-container {
+    max-width: 600px; 
+    margin: 40px auto; 
+    text-align: center; 
+}
+
+/* Adjust the questions so the plus sign is closer and clean */
+.faq-item h3 {
+    display: inline-block; 
+    position: relative;
+    padding-right: 25px; 
+    margin: 15px auto;
+}
+
+/* Reposition the plus/minus sign right next to the header text */
+.faq-item h3::after {
+    content: ' +';
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: none; 
 }
