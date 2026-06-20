@@ -16,7 +16,7 @@ header{
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    z-index: 1000 !important;
+    z-index: 9999 !important;
 
 } 
 .logo{
