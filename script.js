@@ -199,3 +199,100 @@ if (menuSearchInput) {
 document.addEventListener("DOMContentLoaded", () => {
     renderMenu(menuProducts);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // Get the form and the status display area
+    const contactForm = document.getElementById("contactForm");
+    const contactStatus = document.getElementById("contactStatusMessage");
+
+    // Only run if the contact form exists on the current page
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event) {
+            // 1. Client-Side Validation: Stop the default page reload
+            event.preventDefault();
+            
+            const nameValue = document.getElementById("contactName").value.trim();
+            const emailValue = document.getElementById("contactEmail").value.trim();
+            const messageValue = document.getElementById("contactMessage").value.trim();
+
+            // 2. Error Handling: Display custom messages if validation fails
+            if (nameValue.length < 2) {
+                contactStatus.style.color = "red";
+                contactStatus.textContent = " Name must be at least 2 characters long.";
+                return;
+            }
+
+            if (messageValue.length < 5) {
+                contactStatus.style.color = "red";
+                contactStatus.textContent = " Please write a slightly longer message.";
+                return;
+            }
+
+            // Provide a temporary status update during transmission
+            contactStatus.style.color = "blue";
+            contactStatus.textContent = " Sending message ...";
+
+            // 3. AJAX Form Submission: Submit data seamlessly in the background
+            fetch(contactForm.action, {
+                method: contactForm.method,
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                // Success Handling
+                contactStatus.style.color = "green";
+                contactStatus.textContent = " Success! Your feedback has been sent.";
+                contactForm.reset(); // Clear the form fields
+            })
+            .catch(error => {
+                // Network Error Handling
+                contactStatus.style.color = "red";
+                contactStatus.textContent = " Error: System failed to execute background transmission.";
+            });
+        });
+    }
+});
+
+
+// form for faq 
+const faqForm = document.getElementById("faqForm");
+    const faqStatus = document.getElementById("faqStatusMessage");
+
+    if (faqForm) {
+        faqForm.addEventListener("submit", function(event) {
+            
+            event.preventDefault();
+            
+            const questionValue = document.getElementById("faqMessage").value.trim();
+
+            
+            if (questionValue.length < 5) {
+                faqStatus.style.color = "red";
+                faqStatus.textContent = " Please write a clear question before submitting.";
+                return;
+            }
+
+            
+            faqStatus.style.color = "blue";
+            faqStatus.textContent = " Submitting question ...";
+
+            
+            fetch(faqForm.action, {
+                method: faqForm.method,
+                body: new FormData(faqForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                
+                faqStatus.style.color = "green";
+                faqStatus.textContent = " Success! Your question has been sent.";
+                faqForm.reset(); // Resets input text fields cleanly
+            })
+            .catch(error => {
+                // Style: Applying Red Color for network failures
+                faqStatus.style.color = "red";
+                faqStatus.textContent = " Error: Failed to complete asynchronous submission.";
+            });
+        });
+    }
