@@ -1,0 +1,6 @@
+# Allow all search engines to crawl our cafe website
+User-agent: *
+Allow: /
+
+# Link to our sitemap file to help crawlers find pages faster
+Sitemap: sitemap.xml
