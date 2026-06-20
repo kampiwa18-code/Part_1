@@ -439,3 +439,37 @@ p {
     top: 0;
     float: none; 
 }
+
+/* --- Lightbox Gallery Overlay --- */
+
+.lightbox {
+    display: none; 
+    position: fixed;
+    z-index: 2000; /* Forces it to sit on top of headers, text, and everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Dims the website background with a dark tint */
+    justify-content: center;
+    align-items: center;
+}
+
+/* The enlarged image size rules */
+.lightbox-content {
+    max-width: 85%;
+    max-height: 80%;
+    border-radius: 6px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* The close (X) button design */
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
