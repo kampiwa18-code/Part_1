@@ -8,7 +8,7 @@
     <title>The Daily Grind Café</title>
     
     <link rel="stylesheet" href="CSS/style.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
        
     .map-container {
@@ -96,18 +96,11 @@
  
  <!--Map to my Cafe-->
 
+   <h2>Map Location - Tokai, Cape Town</h2>
 
-
-
-    <h2>Map Location - Tokai, Cape Town</h2>
-
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps?q=Tokai,Cape%20Town&output=embed" height="450" width="600"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+<div id="map" style="height: 400px; width: 100%; max-width: 800px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     </div>
+    
 </main>
  <!--Added a footer-->
 
@@ -116,8 +109,10 @@
     <p> &copy; 2023 The Daily Grind Café. All Rights Reserved.</p>
   </div>
 </footer>
-  
+ 
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
      
 </body>
 </html>
