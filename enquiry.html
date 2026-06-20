@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+
+        
+<body>
+
+    <!--Header-->
+    <header>
+        
+ <div class="logo">
+    <b>The Daily Grind Café</b>
+</div>
+
+<!--navigation bar aligned to the right-->
+        <nav>
+            <ul class="nav-links">
+                <a href="index.html">Home</a> 
+                <a href="about.html">About</a> 
+                <a href="product.html">Product</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="faq.html">FAQs</a>
+                <a href="enquiry.html">Enquriy</a>
+            </ul>
+        </nav>
+</header> 
+
+<h2>Product & Service Enquiries</h2>
+    
+    <div class="bottom-images" style="display:flex; justify-content:center; margin-top:10px;">
+        <img src="images/enquiry.png" alt="Barista brewing artisan coffee" width="100%">
+    </div>
+
+    <!--Enquiry Specific Content Form Area-->
+    <main>
+        <div class="faq-form-container">
+            <h3>Have a question about cost or availability?</h3>
+            <p>Fill out the form below to enquire about our specialized menu items, dietary custom choices, or workspace accessibility details.</p>
+            
+            <!-- Form Submission using the action attribute rule -->
+            <form id="enquiryForm" action="https://formspree.io" method="POST">
+                
+                <p>
+                    <label for="enquiryEmail">Your Email Address:</label><br>
+                    <input type="email" id="enquiryEmail" name="_replyto" required placeholder="@gmail.com">
+                </p>
+                
+                <p>
+                    <label for="enquiryType">What are you inquiring about?</label><br>
+                    <select id="enquiryType" name="enquiryType" required style="width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;">
+                        <option value="">-- Select a Topic --</option>
+                        <option value="Cost">Menu Pricing & Custom Orders</option>
+                        <option value="Availability">Product Item Availability</option>
+                        <option value="Workspace">Table Reservations & Outlets</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="enquiryMessage">Your Specific Question:</label><br>
+                    <textarea id="enquiryMessage" name="message" rows="4" cols="40" required placeholder="Type your question about costs, menu items, or availability here..."></textarea>
+                </p>
+                
+                <!-- Subject line marker for incoming notification emails -->
+                <input type="hidden" name="_subject" value="New Café Product Enquiry">
+
+                <!-- Dynamic text location where your script will display alerts -->
+                <div id="enquiryStatusMessage" style="font-weight: bold; margin-top: 10px; margin-bottom: 10px;"></div>
+
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </div>
+    </main>
+
+    <!--Footer Section-->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p> &copy; 2023 The Daily Grind Café. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
