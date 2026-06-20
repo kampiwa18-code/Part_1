@@ -50,6 +50,7 @@
                 <a href="product.html">Product</a> 
                 <a href="contact.html">Contact</a> 
                 <a href="faq.html">FAQs</a>
+                <a href="enquiry.html">Enquriy</a>
             </ul>
         </nav>
     
@@ -81,19 +82,26 @@
                 </div>
                 
    <div class="info-block">
-    <h2>Contact Us</h2>
-    <form action="submit.php" method="POST">
-        <label for="text">Your Name:</label><br>
-        <input type="text" name="name" placeholder="Your Name" required>
-<br>
-<label for="email">Your Email Address:</label><br>
-        <input type="email" name="email" placeholder="Your Email" required>
+   <h2>Contact Us</h2>
+    
+    <form id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
+        
+        <label for="contactName">Your Name:</label><br>
 
-<br>
-        <label for="message">Your Message:</label><br>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+        <br>
+        
+        <label for="contactEmail">Your Email Address:</label><br>
+        <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
+        <br>
+        
+        <label for="contactMessage">Your Message:</label><br>       
+        <textarea id="contactMessage" name="message" placeholder="Your Message" required></textarea>
+        <div id="contactStatusMessage" style="font-weight: bold; margin: 5px 0;"></div>
+        
         <button type="submit">Send</button>
     </form>
+</div>
 
  </section> 
  
