@@ -383,3 +383,35 @@ p {
     font-weight: bold;
 }
 
+/* --- FAQ Accordion Animations --- */
+
+/* Initially hide the answers and establish transition track */
+.faq-item p {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 10px;
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease, padding 0.4s ease;
+}
+
+/* Slide open and fade in when active class is present */
+.faq-item.active p {
+    max-height: 150px; /* Provides room for the paragraph text */
+    opacity: 1;
+    padding: 10px 10px;
+}
+
+/* Optional UI indicator icon next to your text questions */
+.faq-item h3::after {
+    content: ' +';
+    float: right;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color: #c69363; /* Accent color matching your palette */
+}
+
+/* Turn the indicator into a minus symbol when the block is active */
+.faq-item.active h3::after {
+    content: ' −';
+}
