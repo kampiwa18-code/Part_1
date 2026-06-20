@@ -58,3 +58,22 @@ if (lightbox && lightboxImg && closeBtn) {
         }
     });
 }
+
+// Interactive Map Setup for Tokai, Cape Town
+const mapElement = document.getElementById('map');
+
+if (mapElement) {
+    // Coordinates for Tokai, Cape Town area: [-34.0484, 18.4528]
+    const map = L.map('map').setView([-34.0484, 18.4528], 15);
+
+    // Load and display beautiful open-source map tile layers
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker pin precisely in Tokai
+    const cafeMarker = L.marker([-34.0484, 18.4528]).addTo(map);
+    
+    // Add the popup text bubble
+    cafeMarker.bindPopup("<b>The Daily Grind Café</b><br>Tokai, Cape Town<br>Come visit us for the best brew in town!").openPopup();
+}
