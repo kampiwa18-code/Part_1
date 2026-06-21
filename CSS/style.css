@@ -473,3 +473,59 @@ p {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* 1. Universal Reset — Prevents random browser spacing from moving elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Header & Navigation — Locks the bar at the top and spaces links cleanly */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff; /* Or your preferred theme color */
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Keeps an exact, unmovable gap between your menu items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* 3. Main Container — Keeps your enquiry form centered and restricted */
+main {
+    max-width: 1200px;
+    margin: 40px auto; /* Centers the entire content block on the screen */
+    padding: 0 20px;
+}
+
+/* 4. Enquiry Form Wrapper — Stops form fields from stretching or breaking */
+.enquiry-container {
+    max-width: 600px; /* Locks the maximum width of the form */
+    margin: 0 auto;   /* Centers the form inside the main content area */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;        /* Keeps clean, fixed vertical spacing between inputs */
+}
+
+/* 5. Form Fields — Makes sure inputs stay inside their container boundaries */
+.enquiry-container input,
+.enquiry-container textarea,
+.enquiry-container button {
+    width: 100%;      /* Forces elements to safely fill the 600px container */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
