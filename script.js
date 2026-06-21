@@ -256,6 +256,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // form for faq 
+
+
 const faqForm = document.getElementById("faqForm");
     const faqStatus = document.getElementById("faqStatusMessage");
 
@@ -293,6 +295,49 @@ const faqForm = document.getElementById("faqForm");
                 // Style: Applying Red Color for network failures
                 faqStatus.style.color = "red";
                 faqStatus.textContent = " Error: Failed to complete asynchronous submission.";
+            });
+        });
+    }
+ // Form for enquiry
+ 
+    const enquiryForm = document.getElementById("enquiryForm");
+    const enquiryStatus = document.getElementById("enquiryStatusMessage");
+
+    if (enquiryForm) {
+        enquiryForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const typeValue = document.getElementById("enquiryType").value;
+            const messageValue = document.getElementById("enquiryMessage").value.trim();
+
+            if (typeValue === "") {
+                enquiryStatus.style.color = "red";
+                enquiryStatus.textContent = " Please choose an enquiry topic.";
+                return;
+            }
+
+            if (messageValue.length < 10) {
+                enquiryStatus.style.color = "red";
+                enquiryStatus.textContent = "Please describe your cost or availability query in more detail (min 10 characters).";
+                return;
+            }
+
+            enquiryStatus.style.color = "blue";
+            enquiryStatus.textContent = " Submitting enquiry details asynchronously...";
+
+            fetch(enquiryForm.action, {
+                method: enquiryForm.method,
+                body: new FormData(enquiryForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                enquiryStatus.style.color = "green";
+                enquiryStatus.textContent = "Success! Your enquiry has been processed.";
+                enquiryForm.reset();
+            })
+            .catch(error => {
+                enquiryStatus.style.color = "red";
+                enquiryStatus.textContent = " Error: Failed to complete background submission.";
             });
         });
     }

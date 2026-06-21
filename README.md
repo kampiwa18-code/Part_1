@@ -29,6 +29,8 @@ This project involves designing and developing a resposive multi page website fo
 * **Part 1 (Completed):** Base HTML wireframing, initial multi-page document structure setups, core text assets, and asset management organization.
 * **Part 2 (Current Submission):** Implementation of comprehensive CSS styling sheets, fixing layout structural bugs, deploying custom interactive responsive breakpoints and integrating full GitHub Pages deployment.
 
+## Site Link
+https://superlative-tartufo-dcbabc.netlify.app/
 
 ##  Site Map
 
@@ -38,6 +40,16 @@ This project involves designing and developing a resposive multi page website fo
 * **Contact** (`contact.html`) - Provides operational hours and contact data. Integrated with Leaflet JS script map components to map coordinates and markers natively over Tokai, Cape Town.
 * **FAQs** (`faq.html`) - Frequently Asked Questions page utilizing structured sliding JavaScript accordion scripts to toggle semantic article answer containers.
 * **Enquiry** (`enquiry.html`) - Specialized user communication module engineered with topic parameters to intercept, capture, and filter queries regarding menu pricing costs or custom product stock availability.
+
+### 3.2. Off-Page SEO Optimization Strategy
+
+To build domain authority, drive organic regional traffic, and enhance the digital footprint of The Daily Grind Café outside of its own direct web domain, a multi-channel Off-Page SEO strategy was developed and documented:
+
+* **Backlinks (Authority Building):** Strategic link-building initiatives were designed to secure high-quality inbound hyperlinks from reputable local platforms. This includes targeting listings on regional Cape Town food, beverage, and hospitality directories, as well as collaborative features on local lifestyle blogs. These external citations act as verified "votes of confidence" for search engine crawlers, steadily increasing the website's domain authority and search page rankings.
+    
+* **Social Media Integration:** Brand visibility and community interaction are driven through active external platform management. The café utilizes designated social channels—specifically leveraging networking ecosystems like X (formerly Twitter) under the handle @KKampiwa82582—to share updates, cross-promote Saturday menu specials, and host promotional graphics. This consistent external link placement funnels direct user traffic back to the primary website domain while signaling positive user-engagement metrics to search engine indexing bots.
+    
+* **Local SEO Optimization:** Because the business operates within a physical geographic location, optimization for regional discovery is paramount. The platform is structured to align with localized directory criteria, explicitly targeting search engine map discovery queries for users looking for workspaces or premium coffee in Tokai and the greater Cape Town area. This works in tandem with the on-page embedded Leaflet JS coordinates map to lock down localized keyword dominance (e.g., "Café in Tokai", "Cape Town remote workspaces").
 
 ## Change Log
 
