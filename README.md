@@ -148,10 +148,15 @@ To build domain authority, drive organic regional traffic, and enhance the digit
 ---
 
 ## References
-* **Formspree API:** Developer Core Architecture and Form Action Endpoints. Available at: https://formspree.io/
-* **Leaflet JS:** Asynchronous Web-Mapping Library. Available at: https://unpkg.com/leaflet@1.9.4/dist/
-* **MDN Web Docs:** Client-side Form Validation and Fetch API System Guides. Available at: https://developer.mozilla.org/
+* Domains.co.za. 2026. CO.ZA domain name registration and search portal. Available at: https://www.domains.co.za/domain-registration/co-za-domains [Accessed 22 May 2026].
 
+* Folk Café. 2026. Folk Café St James - food, coffee, community. Available at: https://www.folkcafe.co.za/ [Accessed 21 June 2026].
+ 
+* Git. 2026. Git basics - getting a Git repository. Available at: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository [Accessed 23 May 2026].
+
+* Mozilla Developer Network (MDN). 2026. How to structure a web form. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form [Accessed 23 May 2026]. 
+
+* Mozilla Developer Network (MDN). 2026. The Document HTML element reference. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html [Accessed 22 May 2026].
 
 
 
